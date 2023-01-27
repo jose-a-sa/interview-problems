@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/CPP",
+    "files.associations": {
+        "*.m": "octave",
+        ".prettierrc": "yaml",
+        "iostream": "cpp"
+    }
+}
