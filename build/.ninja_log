@@ -1,9 +1,0 @@
-# ninja log v5
-1	42	1674783776798600178	/Users/jose/MEGA/Source/interview-problems/CPP/bin/main	8f8485642d2ce4ee
-1	282	1674783471428445468	CMakeFiles/main.dir/src/calculator.cpp.o	3eac79d9d33670a8
-297	340	1674783777096078568	/Users/jose/MEGA/Source/interview-problems/CPP/bin/calculator	59b835277b9459a3
-1	210	1674783471356880620	CMakeFiles/main.dir/src/main.cpp.o	73518552e0b50f39
-1	38	1674783785403674760	build.ninja	80791fca62d2083d
-2	297	1674783777052457734	CMakeFiles/calculator.dir/src/calculator.cpp.o	c939cf3ef35a62
-2	303	1674783833958444459	CMakeFiles/calculator.dir/src/calculator.cpp.o	c939cf3ef35a62
-303	351	1674783834006669907	/Users/jose/MEGA/Source/interview-problems/CPP/bin/calculator	59b835277b9459a3
