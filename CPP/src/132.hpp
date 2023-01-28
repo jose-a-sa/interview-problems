@@ -3,11 +3,6 @@
 
 using namespace std;
 
-#include <vector>
-#include <stack>
-
-using namespace std;
-
 class Solution {
 public:
     bool find132pattern_O3(vector<int>& nums) {
