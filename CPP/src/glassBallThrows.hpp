@@ -3,7 +3,7 @@
 using namespace std;
 
 size_t glassBallMinThrows(size_t height, size_t point)
-{
+{   
     size_t cnt = 0;
     int lo = 0;
     int hi = height;
@@ -16,8 +16,7 @@ size_t glassBallMinThrows(size_t height, size_t point)
         else
             hi = mid;
     }
-    cout << "Final: " << cnt;
-    cout << ", Check: " << ((hi == point) ? "true" : "false") << endl;
+    cout << "Count: " << cnt << ", Low : " << lo << ", High: " << hi << endl;
 
     return cnt;
 }
