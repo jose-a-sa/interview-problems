@@ -1,13 +1,13 @@
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <unordered_set>
-#include <unordered_map>
-#include <utility>
 #include <algorithm>
+#include <iostream>
 #include <numeric>
-#include <string>
+#include <queue>
 #include <sstream>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 
 using namespace std;
 
@@ -47,7 +47,6 @@ public:
                 return;
             }
 
-            
             tree[parent].insert(child);
             inDegree[child]++;
 
@@ -58,8 +57,8 @@ public:
                 return;
             }
         }
-        //run bfs
-        
+        // run bfs
+
         queue<char> bfs;
         vector<int> visited(26, 0);
 
@@ -67,33 +66,33 @@ public:
             if (inDegree[c] == 0 && nodes.count(c))
             {
                 bfs.push(c);
-                visited[c-'A'] = 1;
+                visited[c - 'A'] = 1;
             }
 
-        if(bfs.size() > 1)
+        if (bfs.size() > 1)
         {
             cout << "E4";
             return;
         }
-        if(bfs.size() == 0)
+        if (bfs.size() == 0)
         {
             cout << "E5";
             return;
         }
 
-        while(!bfs.empty())
+        while (!bfs.empty())
         {
             char p = bfs.front();
             bfs.pop();
 
-            for(char c : tree[p])
+            for (char c : tree[p])
             {
-                if(!visited[c-'A'])
+                if (!visited[c - 'A'])
                 {
-                    visited[c-'A'] = 1;
+                    visited[c - 'A'] = 1;
                     bfs.push(c);
                 }
-                else if(inDegree[c] > 1)
+                else if (inDegree[c] > 1)
                 {
                     cout << "E5";
                     return;

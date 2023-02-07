@@ -1,8 +1,8 @@
+#include <algorithm>
+#include <climits>
+#include <functional>
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <functional>
-#include <climits>
 using namespace std;
 
 class Solution
@@ -38,7 +38,7 @@ public:
         size_t m = pizza.front().size();
 
         vector<vector<int>> acc(n, vector<int>(m, 0));
-    
+
         for (int i = n - 1; i >= 0; --i)
         {
             for (int j = m - 1; j >= 0; --j)

@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <stack>
 #include <bitset>
+#include <iostream>
+#include <stack>
+#include <vector>
 using namespace std;
 
 class Solution
@@ -68,7 +68,7 @@ public:
 
                     circular &= !(nums[s] * nums[w] < 0 || w == s);
 
-                    if(check(state[s], HAS_CYCLE) && circular)
+                    if (check(state[s], HAS_CYCLE) && circular)
                     {
                         cout << "STACK RETURN TO CYCLE AT " << s << endl;
                         return true;
@@ -90,7 +90,7 @@ public:
                 }
             }
 
-            for(int k = 0; k < V; ++k)
+            for (int k = 0; k < V; ++k)
             {
                 cout << bitset<3>(state[k]) << " ";
             }

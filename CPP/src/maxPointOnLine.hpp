@@ -1,12 +1,11 @@
-//#include <hash_map>
+// #include <hash_map>
+#include <algorithm>
+#include <functional>
 #include <numeric>
 #include <unordered_map>
 #include <vector>
-#include <algorithm>
-#include <functional>
 
 using namespace std;
-
 
 template <class T1, class T2>
 struct pair_hash

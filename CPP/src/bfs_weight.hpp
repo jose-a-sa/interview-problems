@@ -1,9 +1,9 @@
-#include <vector>
+#include <climits>
 #include <iostream>
 #include <queue>
 #include <tuple>
-#include <climits>
 #include <unordered_map>
+#include <vector>
 
 using namespace std;
 
@@ -42,8 +42,8 @@ public:
 
         for (auto e : edges)
         {
-            adj[e[0]].push_back({e[1],e[2]});
-            adj[e[1]].push_back({e[0],e[2]});
+            adj[e[0]].push_back({e[1], e[2]});
+            adj[e[1]].push_back({e[0], e[2]});
         }
 
         vector<int> cost(V, INT_MAX);
@@ -68,13 +68,13 @@ public:
 
                 if (time_e <= maxTime)
                 {
-                    if (cost[n] > cost_e) //prioritize edges with minumum cost of the dest node
+                    if (cost[n] > cost_e) // prioritize edges with minumum cost of the dest node
                     {
                         cost[n] = cost_e;
                         time[n] = time_e;
                         pq.push(VertexData(cost_e, time_e, n));
                     }
-                    else if (time[n] > time_e) //prioritize edges with minumum time added for optimization
+                    else if (time[n] > time_e) // prioritize edges with minumum time added for optimization
                     {
                         time[n] = time_e;
                         pq.push(VertexData(cost_e, time_e, n));

@@ -3,7 +3,7 @@
 using namespace std;
 
 size_t glassBallMinThrows(size_t height, size_t point)
-{   
+{
     size_t cnt = 0;
     int lo = 0;
     int hi = height;

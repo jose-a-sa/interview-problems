@@ -8,6 +8,7 @@ class Lit
 {
 private:
     string expr;
+
 public:
     Lit(string x);
     Lit *Add(const Lit &rhs);

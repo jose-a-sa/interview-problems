@@ -1,9 +1,9 @@
 #include "calculator.hpp"
 
-#include <string>
 #include <iostream>
 #include <sstream>
 #include <stack>
+#include <string>
 
 using namespace std;
 
@@ -79,11 +79,10 @@ string Lit::toString() const
     return this->expr;
 }
 
-
 int main()
 {
-    Lit* foo = new Lit("5");
-    Lit* bar = foo->Mul(Lit("2"))->Add(Lit("2"))->Mul(Lit("4"));
+    Lit *foo = new Lit("5");
+    Lit *bar = foo->Mul(Lit("2"))->Add(Lit("2"))->Mul(Lit("4"));
     cout << bar->toString() << endl;
     cout << bar->simplify()->toString() << endl;
     return 0;
