@@ -16,6 +16,8 @@ link_directories("${CMAKE_CURRENT_SOURCE_DIR}/lib")
 # Source related variables
 set(MAIN_SRC src/main.cpp)
 add_executable(main ${MAIN_SRC})
+set_property(TARGET main PROPERTY CXX_STANDARD 17)
 
 set(CALC_SRC src/calculator.cpp)
 add_executable(calculator ${CALC_SRC})
+set_property(TARGET calculator PROPERTY CXX_STANDARD 17)
